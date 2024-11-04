@@ -1,0 +1,14 @@
+{
+  "name": "gulpjs4-2824056",
+  "version": "1.0.0",
+  "description": "This is the repository for the LinkedIn Learning course on Gulp.js 4. The full course is available from [LinkedIn Learning](https://www.linkedin.com/learning/instructors/ray-villalobos).",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Digbijay Nayak",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}
