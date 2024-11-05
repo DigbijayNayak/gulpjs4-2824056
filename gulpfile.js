@@ -24,19 +24,13 @@ function css(cb) {
 }
 
 function js(cb) {
-  src([
-    `${origin}/js/lib/bootstrap.bundle.min.js`,
-    `${origin}/js/lib/fontawesome-all.min.js`,
-    `${origin}/js/lib/jquery.min.js`,
-    `${origin}/js/script.js`,
-  ])
+  src(`${origin}/js/lib/**/*.js`).pipe(dest(`${destination}/js/lib`));
+  src(`${origin}/js/script.js`)
     .pipe(
       babel({
-        compact: false,
         presets: ['@babel/env'],
       })
     )
-    .pipe(concatenate('build.js'))
     .pipe(dest(`${destination}/js`));
   cb();
 }
